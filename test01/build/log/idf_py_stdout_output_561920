@@ -1,0 +1,492 @@
+Command: C:\Users\09677\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\09677\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM10 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\work-2025-1\Week-11-Microcontroller-applications\test01\build\test01.elf C:\work-2025-1\Week-11-Microcontroller-applications\test01\build\bootloader\bootloader.elf --force-color -m 'C:\Users\09677\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\09677\esp\v5.5.1\esp-idf\tools\idf.py' '-p' 'COM10'
+v:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 24 2025 11:16:07[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0af14h ( 44820) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001af3c vaddr=3ffb0000 size=02450h (  9296) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001d394 vaddr=40080000 size=02c84h ( 11396) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16140h ( 90432) map[0m
+[0;32mI (146) esp_image: segment 4: paddr=00036168 vaddr=40082c84 size=0a558h ( 42328) load[0m
+[0;32mI (162) esp_image: segment 5: paddr=000406c8 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (169) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (169) boot: Disabling RNG early entropy source...[0m
+[0;32mI (180) cpu_start: Multicore app[0m
+[0;32mI (189) cpu_start: Pro cpu start user code[0m
+[0;32mI (189) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (189) app_init: Application information:[0m
+[0;32mI (189) app_init: Project name:     test01[0m
+[0;32mI (193) app_init: App version:      5a0da61-dirty[0m
+[0;32mI (197) app_init: Compile time:     Sep 24 2025 11:14:39[0m
+[0;32mI (202) app_init: ELF file SHA256:  561b1f6e0...[0m
+[0;32mI (207) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (211) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (234) heap_init: At 3FFB2D80 len 0002D280 (180 KiB): DRAM[0m
+[0;32mI (239) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (250) heap_init: At 4008D1DC len 00012E24 (75 KiB): IRAM[0m
+[0;33mW (256) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (268) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (275) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (287) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (295) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) LDR_LED_CONTROL: ใช้การปรับเทียบแบบ eFuse Vref[0m
+[0;32mI (305) LDR_LED_CONTROL: เริ่มต้นระบบควบคุมแสง LED ด้วย LDR[0m
+[0;32mI (315) LDR_LED_CONTROL: LDR Pin: GPIO35 (ADC1_CH7)[0m
+[0;32mI (315) LDR_LED_CONTROL: LED Pin: GPIO32 (PWM)[0m
+[0;32mI (325) LDR_LED_CONTROL: PWM: 13-bit, 5000Hz[0m
+[0;32mI (325) LDR_LED_CONTROL: LDR: 1642 (40.1%) | แรงดัน: 1507mV | LED: 59.9%[0m
+[0;32mI (435) LDR_LED_CONTROL: LDR: 12 (0.3%) | แรงดัน: 152mV | LED: 99.7%[0m
+[0;32mI (535) LDR_LED_CONTROL: LDR: 12 (0.3%) | แรงดัน: 152mV | LED: 99.7%[0m
+[0;32mI (635) LDR_LED_CONTROL: LDR: 26 (0.6%) | แรงดัน: 164mV | LED: 99.4%[0m
+[0;32mI (735) LDR_LED_CONTROL: LDR: 34 (0.8%) | แรงดัน: 170mV | LED: 99.2%[0m
+[0;32mI (835) LDR_LED_CONTROL: LDR: 42 (1.0%) | แรงดัน: 177mV | LED: 99.0%[0m
+[0;32mI (935) LDR_LED_CONTROL: LDR: 43 (1.1%) | แรงดัน: 178mV | LED: 98.9%[0m
+[0;32mI (1035) LDR_LED_CONTROL: LDR: 76 (1.9%) | แรงดัน: 205mV | LED: 98.1%[0m
+[0;32mI (1135) LDR_LED_CONTROL: LDR: 121 (3.0%) | แรงดัน: 243mV | LED: 97.0%[0m
+[0;32mI (1235) LDR_LED_CONTROL: LDR: 159 (3.9%) | แรงดัน: 274mV | LED: 96.1%[0m
+[0;32mI (1335) LDR_LED_CONTROL: LDR: 175 (4.3%) | แรงดัน: 287mV | LED: 95.7%[0m
+[0;32mI (1435) LDR_LED_CONTROL: LDR: 224 (5.5%) | แรงดัน: 328mV | LED: 94.5%[0m
+[0;32mI (1535) LDR_LED_CONTROL: LDR: 299 (7.3%) | แรงดัน: 391mV | LED: 92.7%[0m
+[0;32mI (1635) LDR_LED_CONTROL: LDR: 387 (9.5%) | แรงดัน: 464mV | LED: 90.5%[0m
+[0;32mI (1735) LDR_LED_CONTROL: LDR: 429 (10.5%) | แรงดัน: 499mV | LED: 89.5%[0m
+[0;32mI (1835) LDR_LED_CONTROL: LDR: 496 (12.1%) | แรงดัน: 554mV | LED: 87.9%[0m
+[0;32mI (1935) LDR_LED_CONTROL: LDR: 506 (12.4%) | แรงดัน: 563mV | LED: 87.6%[0m
+[0;32mI (2035) LDR_LED_CONTROL: LDR: 629 (15.4%) | แรงดัน: 665mV | LED: 84.6%[0m
+[0;32mI (2135) LDR_LED_CONTROL: LDR: 690 (16.8%) | แรงดัน: 716mV | LED: 83.1%[0m
+[0;32mI (2235) LDR_LED_CONTROL: LDR: 725 (17.7%) | แรงดัน: 745mV | LED: 82.3%[0m
+[0;32mI (2335) LDR_LED_CONTROL: LDR: 787 (19.2%) | แรงดัน: 796mV | LED: 80.8%[0m
+[0;32mI (2435) LDR_LED_CONTROL: LDR: 878 (21.4%) | แรงดัน: 872mV | LED: 78.5%[0m
+[0;32mI (2535) LDR_LED_CONTROL: LDR: 951 (23.2%) | แรงดัน: 933mV | LED: 76.8%[0m
+[0;32mI (2635) LDR_LED_CONTROL: LDR: 980 (23.9%) | แรงดัน: 957mV | LED: 76.1%[0m
+[0;32mI (2735) LDR_LED_CONTROL: LDR: 1047 (25.6%) | แรงดัน: 1012mV | LED: 74.4%[0m
+[0;32mI (2835) LDR_LED_CONTROL: LDR: 1203 (29.4%) | แรงดัน: 1142mV | LED: 70.6%[0m
+[0;32mI (2935) LDR_LED_CONTROL: LDR: 1194 (29.2%) | แรงดัน: 1135mV | LED: 70.8%[0m
+[0;32mI (3035) LDR_LED_CONTROL: LDR: 1280 (31.3%) | แรงดัน: 1206mV | LED: 68.7%[0m
+[0;32mI (3135) LDR_LED_CONTROL: LDR: 1305 (31.9%) | แรงดัน: 1227mV | LED: 68.1%[0m
+[0;32mI (3235) LDR_LED_CONTROL: LDR: 1415 (34.6%) | แรงดัน: 1318mV | LED: 65.4%[0m
+[0;32mI (3335) LDR_LED_CONTROL: LDR: 1527 (37.3%) | แรงดัน: 1411mV | LED: 62.7%[0m
+[0;32mI (3435) LDR_LED_CONTROL: LDR: 1547 (37.8%) | แรงดัน: 1428mV | LED: 62.2%[0m
+[0;32mI (3535) LDR_LED_CONTROL: LDR: 1617 (39.5%) | แรงดัน: 1486mV | LED: 60.5%[0m
+[0;32mI (3635) LDR_LED_CONTROL: LDR: 1712 (41.8%) | แรงดัน: 1565mV | LED: 58.2%[0m
+[0;32mI (3735) LDR_LED_CONTROL: LDR: 1801 (44.0%) | แรงดัน: 1639mV | LED: 56.0%[0m
+[0;32mI (3835) LDR_LED_CONTROL: LDR: 1884 (46.0%) | แรงดัน: 1708mV | LED: 54.0%[0m
+[0;32mI (3935) LDR_LED_CONTROL: LDR: 1942 (47.4%) | แรงดัน: 1756mV | LED: 52.6%[0m
+[0;32mI (4035) LDR_LED_CONTROL: LDR: 2033 (49.6%) | แรงดัน: 1832mV | LED: 50.3%[0m
+[0;32mI (4135) LDR_LED_CONTROL: LDR: 2006 (49.0%) | แรงดัน: 1810mV | LED: 51.0%[0m
+[0;32mI (4235) LDR_LED_CONTROL: LDR: 2179 (53.2%) | แรงดัน: 1953mV | LED: 46.8%[0m
+[0;32mI (4335) LDR_LED_CONTROL: LDR: 2274 (55.5%) | แรงดัน: 2032mV | LED: 44.5%[0m
+[0;32mI (4435) LDR_LED_CONTROL: LDR: 2364 (57.7%) | แรงดัน: 2107mV | LED: 42.3%[0m
+[0;32mI (4535) LDR_LED_CONTROL: LDR: 2429 (59.3%) | แรงดัน: 2161mV | LED: 40.7%[0m
+[0;32mI (4635) LDR_LED_CONTROL: LDR: 2524 (61.6%) | แรงดัน: 2240mV | LED: 38.4%[0m
+[0;32mI (4735) LDR_LED_CONTROL: LDR: 2602 (63.5%) | แรงดัน: 2305mV | LED: 36.5%[0m
+[0;32mI (4835) LDR_LED_CONTROL: LDR: 2692 (65.7%) | แรงดัน: 2380mV | LED: 34.3%[0m
+[0;32mI (4935) LDR_LED_CONTROL: LDR: 2742 (67.0%) | แรงดัน: 2421mV | LED: 33.0%[0m
+[0;32mI (5035) LDR_LED_CONTROL: LDR: 2881 (70.4%) | แรงดัน: 2537mV | LED: 29.6%[0m
+[0;32mI (5135) LDR_LED_CONTROL: LDR: 2927 (71.5%) | แรงดัน: 2565mV | LED: 28.5%[0m
+[0;32mI (5235) LDR_LED_CONTROL: LDR: 3005 (73.4%) | แรงดัน: 2615mV | LED: 26.6%[0m
+[0;32mI (5335) LDR_LED_CONTROL: LDR: 3116 (76.1%) | แรงดัน: 2685mV | LED: 23.9%[0m
+[0;32mI (5435) LDR_LED_CONTROL: LDR: 3211 (78.4%) | แรงดัน: 2742mV | LED: 21.6%[0m
+[0;32mI (5535) LDR_LED_CONTROL: LDR: 3265 (79.7%) | แรงดัน: 2773mV | LED: 20.3%[0m
+[0;32mI (5635) LDR_LED_CONTROL: LDR: 3370 (82.3%) | แรงดัน: 2831mV | LED: 17.7%[0m
+[0;32mI (5735) LDR_LED_CONTROL: LDR: 3439 (84.0%) | แรงดัน: 2867mV | LED: 16.0%[0m
+[0;32mI (5835) LDR_LED_CONTROL: LDR: 3564 (87.0%) | แรงดัน: 2928mV | LED: 13.0%[0m
+[0;32mI (5935) LDR_LED_CONTROL: LDR: 3620 (88.4%) | แรงดัน: 2954mV | LED: 11.6%[0m
+[0;32mI (6035) LDR_LED_CONTROL: LDR: 3681 (89.9%) | แรงดัน: 2982mV | LED: 10.1%[0m
+[0;32mI (6135) LDR_LED_CONTROL: LDR: 3751 (91.6%) | แรงดัน: 3014mV | LED: 8.4%[0m
+[0;32mI (6235) LDR_LED_CONTROL: LDR: 3844 (93.9%) | แรงดัน: 3055mV | LED: 6.1%[0m
+[0;32mI (6335) LDR_LED_CONTROL: LDR: 3913 (95.6%) | แรงดัน: 3085mV | LED: 4.4%[0m
+[0;32mI (6435) LDR_LED_CONTROL: LDR: 3963 (96.8%) | แรงดัน: 3106mV | LED: 3.2%[0m
+[0;32mI (6535) LDR_LED_CONTROL: LDR: 4034 (98.5%) | แรงดัน: 3135mV | LED: 1.5%[0m
+[0;32mI (6635) LDR_LED_CONTROL: LDR: 4056 (99.0%) | แรงดัน: 3144mV | LED: 1.0%[0m
+[0;32mI (6735) LDR_LED_CONTROL: LDR: 4081 (99.7%) | แรงดัน: 3154mV | LED: 0.3%[0m
+[0;32mI (6835) LDR_LED_CONTROL: LDR: 3960 (96.7%) | แรงดัน: 3105mV | LED: 3.3%[0m
+[0;32mI (6935) LDR_LED_CONTROL: LDR: 4021 (98.2%) | แรงดัน: 3129mV | LED: 1.8%[0m
+[0;32mI (7035) LDR_LED_CONTROL: LDR: 4028 (98.4%) | แรงดัน: 3132mV | LED: 1.6%[0m
+[0;32mI (7135) LDR_LED_CONTROL: LDR: 3967 (96.9%) | แรงดัน: 3108mV | LED: 3.1%[0m
+[0;32mI (7235) LDR_LED_CONTROL: LDR: 3916 (95.6%) | แรงดัน: 3086mV | LED: 4.4%[0m
+[0;32mI (7335) LDR_LED_CONTROL: LDR: 3868 (94.5%) | แรงดัน: 3066mV | LED: 5.5%[0m
+[0;32mI (7435) LDR_LED_CONTROL: LDR: 3872 (94.6%) | แรงดัน: 3067mV | LED: 5.4%[0m
+[0;32mI (7535) LDR_LED_CONTROL: LDR: 3855 (94.1%) | แรงดัน: 3060mV | LED: 5.9%[0m
+[0;32mI (7635) LDR_LED_CONTROL: LDR: 3810 (93.0%) | แรงดัน: 3040mV | LED: 7.0%[0m
+[0;32mI (7735) LDR_LED_CONTROL: LDR: 3769 (92.0%) | แรงดัน: 3022mV | LED: 8.0%[0m
+[0;32mI (7835) LDR_LED_CONTROL: LDR: 3677 (89.8%) | แรงดัน: 2981mV | LED: 10.2%[0m
+[0;32mI (7935) LDR_LED_CONTROL: LDR: 3701 (90.4%) | แรงดัน: 2992mV | LED: 9.6%[0m
+[0;32mI (8035) LDR_LED_CONTROL: LDR: 3685 (90.0%) | แรงดัน: 2984mV | LED: 10.0%[0m
+[0;32mI (8135) LDR_LED_CONTROL: LDR: 3655 (89.3%) | แรงดัน: 2970mV | LED: 10.7%[0m
+[0;32mI (8235) LDR_LED_CONTROL: LDR: 3563 (87.0%) | แรงดัน: 2928mV | LED: 13.0%[0m
+[0;32mI (8335) LDR_LED_CONTROL: LDR: 3560 (86.9%) | แรงดัน: 2926mV | LED: 13.1%[0m
+[0;32mI (8435) LDR_LED_CONTROL: LDR: 3334 (81.4%) | แรงดัน: 2812mV | LED: 18.6%[0m
+[0;32mI (8535) LDR_LED_CONTROL: LDR: 3465 (84.6%) | แรงดัน: 2880mV | LED: 15.4%[0m
+[0;32mI (8635) LDR_LED_CONTROL: LDR: 3390 (82.8%) | แรงดัน: 2841mV | LED: 17.2%[0m
+[0;32mI (8735) LDR_LED_CONTROL: LDR: 3360 (82.1%) | แรงดัน: 2825mV | LED: 17.9%[0m
+[0;32mI (8835) LDR_LED_CONTROL: LDR: 3176 (77.6%) | แรงดัน: 2722mV | LED: 22.4%[0m
+[0;32mI (8935) LDR_LED_CONTROL: LDR: 3204 (78.2%) | แรงดัน: 2738mV | LED: 21.8%[0m
+[0;32mI (9035) LDR_LED_CONTROL: LDR: 3124 (76.3%) | แรงดัน: 2690mV | LED: 23.7%[0m
+[0;32mI (9135) LDR_LED_CONTROL: LDR: 3047 (74.4%) | แรงดัน: 2642mV | LED: 25.6%[0m
+[0;32mI (9235) LDR_LED_CONTROL: LDR: 2885 (70.5%) | แรงดัน: 2539mV | LED: 29.5%[0m
+[0;32mI (9335) LDR_LED_CONTROL: LDR: 2866 (70.0%) | แรงดัน: 2524mV | LED: 30.0%[0m
+[0;32mI (9435) LDR_LED_CONTROL: LDR: 2746 (67.1%) | แรงดัน: 2425mV | LED: 32.9%[0m
+[0;32mI (9535) LDR_LED_CONTROL: LDR: 2598 (63.4%) | แรงดัน: 2302mV | LED: 36.6%[0m
+[0;32mI (9635) LDR_LED_CONTROL: LDR: 2546 (62.2%) | แรงดัน: 2258mV | LED: 37.8%[0m
+[0;32mI (9735) LDR_LED_CONTROL: LDR: 2413 (58.9%) | แรงดัน: 2148mV | LED: 41.1%[0m
+[0;32mI (9835) LDR_LED_CONTROL: LDR: 2167 (52.9%) | แรงดัน: 1943mV | LED: 47.1%[0m
+[0;32mI (9935) LDR_LED_CONTROL: LDR: 2293 (56.0%) | แรงดัน: 2048mV | LED: 44.0%[0m
+[0;32mI (10035) LDR_LED_CONTROL: LDR: 2144 (52.4%) | แรงดัน: 1924mV | LED: 47.6%[0m
+[0;32mI (10135) LDR_LED_CONTROL: LDR: 2056 (50.2%) | แรงดัน: 1851mV | LED: 49.8%[0m
+[0;32mI (10235) LDR_LED_CONTROL: LDR: 1785 (43.6%) | แรงดัน: 1626mV | LED: 56.4%[0m
+[0;32mI (10335) LDR_LED_CONTROL: LDR: 1771 (43.2%) | แรงดัน: 1614mV | LED: 56.7%[0m
+[0;32mI (10435) LDR_LED_CONTROL: LDR: 1764 (43.1%) | แรงดัน: 1608mV | LED: 56.9%[0m
+[0;32mI (10535) LDR_LED_CONTROL: LDR: 1659 (40.5%) | แรงดัน: 1521mV | LED: 59.5%[0m
+[0;32mI (10635) LDR_LED_CONTROL: LDR: 1547 (37.8%) | แรงดัน: 1428mV | LED: 62.2%[0m
+[0;32mI (10735) LDR_LED_CONTROL: LDR: 1481 (36.2%) | แรงดัน: 1373mV | LED: 63.8%[0m
+[0;32mI (10835) LDR_LED_CONTROL: LDR: 1444 (35.3%) | แรงดัน: 1342mV | LED: 64.7%[0m
+[0;32mI (10935) LDR_LED_CONTROL: LDR: 1537 (37.5%) | แรงดัน: 1420mV | LED: 62.5%[0m
+[0;32mI (11035) LDR_LED_CONTROL: LDR: 1306 (31.9%) | แรงดัน: 1228mV | LED: 68.1%[0m
+[0;32mI (11135) LDR_LED_CONTROL: LDR: 1519 (37.1%) | แรงดัน: 1405mV | LED: 62.9%[0m
+[0;32mI (11235) LDR_LED_CONTROL: LDR: 1512 (36.9%) | แรงดัน: 1399mV | LED: 63.1%[0m
+[0;32mI (11335) LDR_LED_CONTROL: LDR: 1509 (36.8%) | แรงดัน: 1396mV | LED: 63.1%[0m
+[0;32mI (11435) LDR_LED_CONTROL: LDR: 1711 (41.8%) | แรงดัน: 1564mV | LED: 58.2%[0m
+[0;32mI (11535) LDR_LED_CONTROL: LDR: 1205 (29.4%) | แรงดัน: 1144mV | LED: 70.6%[0m
+[0;32mI (11635) LDR_LED_CONTROL: LDR: 1265 (30.9%) | แรงดัน: 1194mV | LED: 69.1%[0m
+[0;32mI (11735) LDR_LED_CONTROL: LDR: 1087 (26.5%) | แรงดัน: 1046mV | LED: 73.4%[0m
+[0;32mI (11835) LDR_LED_CONTROL: LDR: 1950 (47.6%) | แรงดัน: 1763mV | LED: 52.4%[0m
+[0;32mI (11935) LDR_LED_CONTROL: LDR: 1482 (36.2%) | แรงดัน: 1374mV | LED: 63.8%[0m
+[0;32mI (12035) LDR_LED_CONTROL: LDR: 1409 (34.4%) | แรงดัน: 1313mV | LED: 65.6%[0m
+[0;32mI (12135) LDR_LED_CONTROL: LDR: 1524 (37.2%) | แรงดัน: 1409mV | LED: 62.8%[0m
+[0;32mI (12235) LDR_LED_CONTROL: LDR: 1536 (37.5%) | แรงดัน: 1419mV | LED: 62.5%[0m
+[0;32mI (12335) LDR_LED_CONTROL: LDR: 1860 (45.4%) | แรงดัน: 1688mV | LED: 54.6%[0m
+[0;32mI (12435) LDR_LED_CONTROL: LDR: 1873 (45.7%) | แรงดัน: 1699mV | LED: 54.3%[0m
+[0;32mI (12535) LDR_LED_CONTROL: LDR: 1289 (31.5%) | แรงดัน: 1214mV | LED: 68.5%[0m
+[0;32mI (12635) LDR_LED_CONTROL: LDR: 1795 (43.8%) | แรงดัน: 1634mV | LED: 56.2%[0m
+[0;32mI (12735) LDR_LED_CONTROL: LDR: 1913 (46.7%) | แรงดัน: 1732mV | LED: 53.3%[0m
+[0;32mI (12835) LDR_LED_CONTROL: LDR: 1964 (48.0%) | แรงดัน: 1775mV | LED: 52.0%[0m
+[0;32mI (12935) LDR_LED_CONTROL: LDR: 2046 (50.0%) | แรงดัน: 1843mV | LED: 50.0%[0m
+[0;32mI (13035) LDR_LED_CONTROL: LDR: 2395 (58.5%) | แรงดัน: 2133mV | LED: 41.5%[0m
+[0;32mI (13135) LDR_LED_CONTROL: LDR: 1853 (45.3%) | แรงดัน: 1682mV | LED: 54.7%[0m
+[0;32mI (13235) LDR_LED_CONTROL: LDR: 2161 (52.8%) | แรงดัน: 1938mV | LED: 47.2%[0m
+[0;32mI (13335) LDR_LED_CONTROL: LDR: 1785 (43.6%) | แรงดัน: 1626mV | LED: 56.4%[0m
+[0;32mI (13435) LDR_LED_CONTROL: LDR: 2246 (54.8%) | แรงดัน: 2009mV | LED: 45.1%[0m
+[0;32mI (13535) LDR_LED_CONTROL: LDR: 1694 (41.4%) | แรงดัน: 1550mV | LED: 58.6%[0m
+[0;32mI (13635) LDR_LED_CONTROL: LDR: 1888 (46.1%) | แรงดัน: 1711mV | LED: 53.9%[0m
+[0;32mI (13735) LDR_LED_CONTROL: LDR: 1736 (42.4%) | แรงดัน: 1585mV | LED: 57.6%[0m
+[0;32mI (13835) LDR_LED_CONTROL: LDR: 2243 (54.8%) | แรงดัน: 2007mV | LED: 45.2%[0m
+[0;32mI (13935) LDR_LED_CONTROL: LDR: 2685 (65.6%) | แรงดัน: 2374mV | LED: 34.4%[0m
+[0;32mI (14035) LDR_LED_CONTROL: LDR: 2228 (54.4%) | แรงดัน: 1994mV | LED: 45.6%[0m
+[0;32mI (14135) LDR_LED_CONTROL: LDR: 2692 (65.7%) | แรงดัน: 2380mV | LED: 34.3%[0m
+[0;32mI (14235) LDR_LED_CONTROL: LDR: 2542 (62.1%) | แรงดัน: 2255mV | LED: 37.9%[0m
+[0;32mI (14335) LDR_LED_CONTROL: LDR: 2336 (57.0%) | แรงดัน: 2084mV | LED: 42.9%[0m
+[0;32mI (14435) LDR_LED_CONTROL: LDR: 2524 (61.6%) | แรงดัน: 2240mV | LED: 38.4%[0m
+[0;32mI (14535) LDR_LED_CONTROL: LDR: 2775 (67.8%) | แรงดัน: 2449mV | LED: 32.2%[0m
+[0;32mI (14635) LDR_LED_CONTROL: LDR: 2871 (70.1%) | แรงดัน: 2529mV | LED: 29.9%[0m
+[0;32mI (14735) LDR_LED_CONTROL: LDR: 2649 (64.7%) | แรงดัน: 2344mV | LED: 35.3%[0m
+[0;32mI (14835) LDR_LED_CONTROL: LDR: 3401 (83.1%) | แรงดัน: 2847mV | LED: 16.9%[0m
+[0;32mI (14935) LDR_LED_CONTROL: LDR: 3092 (75.5%) | แรงดัน: 2670mV | LED: 24.5%[0m
+[0;32mI (15035) LDR_LED_CONTROL: LDR: 3433 (83.8%) | แรงดัน: 2864mV | LED: 16.2%[0m
+[0;32mI (15135) LDR_LED_CONTROL: LDR: 3566 (87.1%) | แรงดัน: 2929mV | LED: 12.9%[0m
+[0;32mI (15235) LDR_LED_CONTROL: LDR: 3600 (87.9%) | แรงดัน: 2945mV | LED: 12.1%[0m
+[0;32mI (15335) LDR_LED_CONTROL: LDR: 3606 (88.1%) | แรงดัน: 2948mV | LED: 11.9%[0m
+[0;32mI (15435) LDR_LED_CONTROL: LDR: 3638 (88.8%) | แรงดัน: 2962mV | LED: 11.2%[0m
+[0;32mI (15535) LDR_LED_CONTROL: LDR: 3481 (85.0%) | แรงดัน: 2888mV | LED: 15.0%[0m
+[0;32mI (15635) LDR_LED_CONTROL: LDR: 3672 (89.7%) | แรงดัน: 2978mV | LED: 10.3%[0m
+[0;32mI (15735) LDR_LED_CONTROL: LDR: 3530 (86.2%) | แรงดัน: 2913mV | LED: 13.8%[0m
+[0;32mI (15835) LDR_LED_CONTROL: LDR: 3676 (89.8%) | แรงดัน: 2980mV | LED: 10.2%[0m
+[0;32mI (15935) LDR_LED_CONTROL: LDR: 3862 (94.3%) | แรงดัน: 3063mV | LED: 5.7%[0m
+[0;32mI (16035) LDR_LED_CONTROL: LDR: 3824 (93.4%) | แรงดัน: 3047mV | LED: 6.6%[0m
+[0;32mI (16135) LDR_LED_CONTROL: LDR: 3909 (95.5%) | แรงดัน: 3083mV | LED: 4.5%[0m
+[0;32mI (16235) LDR_LED_CONTROL: LDR: 3877 (94.7%) | แรงดัน: 3070mV | LED: 5.3%[0m
+[0;32mI (16335) LDR_LED_CONTROL: LDR: 3917 (95.7%) | แรงดัน: 3087mV | LED: 4.3%[0m
+[0;32mI (16435) LDR_LED_CONTROL: LDR: 3898 (95.2%) | แรงดัน: 3078mV | LED: 4.8%[0m
+[0;32mI (16535) LDR_LED_CONTROL: LDR: 3960 (96.7%) | แรงดัน: 3105mV | LED: 3.3%[0m
+[0;32mI (16635) LDR_LED_CONTROL: LDR: 3993 (97.5%) | แรงดัน: 3118mV | LED: 2.5%[0m
+[0;32mI (16735) LDR_LED_CONTROL: LDR: 4059 (99.1%) | แรงดัน: 3145mV | LED: 0.9%[0m
+[0;32mI (16835) LDR_LED_CONTROL: LDR: 4051 (98.9%) | แรงดัน: 3142mV | LED: 1.1%[0m
+[0;32mI (16935) LDR_LED_CONTROL: LDR: 4038 (98.6%) | แรงดัน: 3136mV | LED: 1.4%[0m
+[0;32mI (17035) LDR_LED_CONTROL: LDR: 4027 (98.3%) | แรงดัน: 3132mV | LED: 1.7%[0m
+[0;32mI (17135) LDR_LED_CONTROL: LDR: 4028 (98.4%) | แรงดัน: 3132mV | LED: 1.6%[0m
+[0;32mI (17235) LDR_LED_CONTROL: LDR: 4045 (98.8%) | แรงดัน: 3139mV | LED: 1.2%[0m
+[0;32mI (17335) LDR_LED_CONTROL: LDR: 4063 (99.2%) | แรงดัน: 3147mV | LED: 0.8%[0m
+[0;32mI (17435) LDR_LED_CONTROL: LDR: 4072 (99.4%) | แรงดัน: 3151mV | LED: 0.6%[0m
+[0;32mI (17535) LDR_LED_CONTROL: LDR: 4090 (99.9%) | แรงดัน: 3158mV | LED: 0.1%[0m
+[0;32mI (17635) LDR_LED_CONTROL: LDR: 4088 (99.8%) | แรงดัน: 3157mV | LED: 0.2%[0m
+[0;32mI (17735) LDR_LED_CONTROL: LDR: 4094 (100.0%) | แรงดัน: 3160mV | LED: 0.0%[0m
+[0;32mI (17835) LDR_LED_CONTROL: LDR: 4089 (99.9%) | แรงดัน: 3158mV | LED: 0.1%[0m
+[0;32mI (17935) LDR_LED_CONTROL: LDR: 4093 (100.0%) | แรงดัน: 3159mV | LED: 0.0%[0m
+[0;32mI (18035) LDR_LED_CONTROL: LDR: 4092 (99.9%) | แรงดัน: 3159mV | LED: 0.1%[0m
+[0;32mI (18135) LDR_LED_CONTROL: LDR: 4093 (100.0%) | แรงดัน: 3159mV | LED: 0.0%[0m
+[0;32mI (18235) LDR_LED_CONTROL: LDR: 4079 (99.6%) | แรงดัน: 3154mV | LED: 0.4%[0m
+[0;32mI (18335) LDR_LED_CONTROL: LDR: 4061 (99.2%) | แรงดัน: 3146mV | LED: 0.8%[0m
+[0;32mI (18435) LDR_LED_CONTROL: LDR: 4014 (98.0%) | แรงดัน: 3127mV | LED: 2.0%[0m
+[0;32mI (18535) LDR_LED_CONTROL: LDR: 3984 (97.3%) | แรงดัน: 3114mV | LED: 2.7%[0m
+[0;32mI (18635) LDR_LED_CONTROL: LDR: 3942 (96.3%) | แรงดัน: 3097mV | LED: 3.7%[0m
+[0;32mI (18735) LDR_LED_CONTROL: LDR: 3918 (95.7%) | แรงดัน: 3087mV | LED: 4.3%[0m
+[0;32mI (18835) LDR_LED_CONTROL: LDR: 3873 (94.6%) | แรงดัน: 3068mV | LED: 5.4%[0m
+[0;32mI (18935) LDR_LED_CONTROL: LDR: 3851 (94.0%) | แรงดัน: 3058mV | LED: 6.0%[0m
+[0;32mI (19035) LDR_LED_CONTROL: LDR: 3800 (92.8%) | แรงดัน: 3036mV | LED: 7.2%[0m
+[0;32mI (19135) LDR_LED_CONTROL: LDR: 3763 (91.9%) | แรงดัน: 3019mV | LED: 8.1%[0m
+[0;32mI (19235) LDR_LED_CONTROL: LDR: 3723 (90.9%) | แรงดัน: 3002mV | LED: 9.1%[0m
+[0;32mI (19335) LDR_LED_CONTROL: LDR: 3653 (89.2%) | แรงดัน: 2969mV | LED: 10.8%[0m
+[0;32mI (19435) LDR_LED_CONTROL: LDR: 3604 (88.0%) | แรงดัน: 2947mV | LED: 12.0%[0m
+[0;32mI (19535) LDR_LED_CONTROL: LDR: 3513 (85.8%) | แรงดัน: 2904mV | LED: 14.2%[0m
+[0;32mI (19635) LDR_LED_CONTROL: LDR: 3432 (83.8%) | แรงดัน: 2863mV | LED: 16.2%[0m
+[0;32mI (19735) LDR_LED_CONTROL: LDR: 3311 (80.9%) | แรงดัน: 2799mV | LED: 19.1%[0m
+[0;32mI (19835) LDR_LED_CONTROL: LDR: 3160 (77.2%) | แรงดัน: 2712mV | LED: 22.8%[0m
+[0;32mI (19935) LDR_LED_CONTROL: LDR: 3024 (73.8%) | แรงดัน: 2627mV | LED: 26.2%[0m
+[0;32mI (20035) LDR_LED_CONTROL: LDR: 2908 (71.0%) | แรงดัน: 2554mV | LED: 29.0%[0m
+[0;32mI (20135) LDR_LED_CONTROL: LDR: 2765 (67.5%) | แรงดัน: 2440mV | LED: 32.5%[0m
+[0;32mI (20235) LDR_LED_CONTROL: LDR: 2660 (65.0%) | แรงดัน: 2353mV | LED: 35.0%[0m
+[0;32mI (20335) LDR_LED_CONTROL: LDR: 2497 (61.0%) | แรงดัน: 2218mV | LED: 39.0%[0m
+[0;32mI (20435) LDR_LED_CONTROL: LDR: 2343 (57.2%) | แรงดัน: 2090mV | LED: 42.8%[0m
+[0;32mI (20535) LDR_LED_CONTROL: LDR: 2168 (52.9%) | แรงดัน: 1944mV | LED: 47.1%[0m
+[0;32mI (20635) LDR_LED_CONTROL: LDR: 2041 (49.8%) | แรงดัน: 1839mV | LED: 50.2%[0m
+[0;32mI (20735) LDR_LED_CONTROL: LDR: 1927 (47.1%) | แรงดัน: 1744mV | LED: 52.9%[0m
+[0;32mI (20835) LDR_LED_CONTROL: LDR: 1767 (43.2%) | แรงดัน: 1611mV | LED: 56.8%[0m
+[0;32mI (20935) LDR_LED_CONTROL: LDR: 1651 (40.3%) | แรงดัน: 1514mV | LED: 59.7%[0m
+[0;32mI (21035) LDR_LED_CONTROL: LDR: 1510 (36.9%) | แรงดัน: 1397mV | LED: 63.1%[0m
+[0;32mI (21135) LDR_LED_CONTROL: LDR: 1395 (34.1%) | แรงดัน: 1302mV | LED: 65.9%[0m
+[0;32mI (21235) LDR_LED_CONTROL: LDR: 1292 (31.6%) | แรงดัน: 1216mV | LED: 68.4%[0m
+[0;32mI (21335) LDR_LED_CONTROL: LDR: 1193 (29.1%) | แรงดัน: 1134mV | LED: 70.9%[0m
+[0;32mI (21435) LDR_LED_CONTROL: LDR: 1099 (26.8%) | แรงดัน: 1056mV | LED: 73.2%[0m
+[0;32mI (21535) LDR_LED_CONTROL: LDR: 1007 (24.6%) | แรงดัน: 979mV | LED: 75.4%[0m
+[0;32mI (21635) LDR_LED_CONTROL: LDR: 916 (22.4%) | แรงดัน: 903mV | LED: 77.6%[0m
+[0;32mI (21735) LDR_LED_CONTROL: LDR: 832 (20.3%) | แรงดัน: 834mV | LED: 79.7%[0m
+[0;32mI (21835) LDR_LED_CONTROL: LDR: 740 (18.1%) | แรงดัน: 757mV | LED: 81.9%[0m
+[0;32mI (21935) LDR_LED_CONTROL: LDR: 668 (16.3%) | แรงดัน: 697mV | LED: 83.7%[0m
+[0;32mI (22035) LDR_LED_CONTROL: LDR: 566 (13.8%) | แรงดัน: 612mV | LED: 86.2%[0m
+[0;32mI (22135) LDR_LED_CONTROL: LDR: 498 (12.2%) | แรงดัน: 556mV | LED: 87.8%[0m
+[0;32mI (22235) LDR_LED_CONTROL: LDR: 429 (10.5%) | แรงดัน: 499mV | LED: 89.5%[0m
+[0;32mI (22335) LDR_LED_CONTROL: LDR: 345 (8.4%) | แรงดัน: 429mV | LED: 91.6%[0m
+[0;32mI (22435) LDR_LED_CONTROL: LDR: 268 (6.5%) | แรงดัน: 365mV | LED: 93.4%[0m
+[0;32mI (22535) LDR_LED_CONTROL: LDR: 179 (4.4%) | แรงดัน: 291mV | LED: 95.6%[0m
+[0;32mI (22635) LDR_LED_CONTROL: LDR: 105 (2.6%) | แรงดัน: 229mV | LED: 97.4%[0m
+[0;32mI (22735) LDR_LED_CONTROL: LDR: 50 (1.2%) | แรงดัน: 184mV | LED: 98.8%[0m
+[0;32mI (22835) LDR_LED_CONTROL: LDR: 26 (0.6%) | แรงดัน: 164mV | LED: 99.4%[0m
+[0;32mI (22935) LDR_LED_CONTROL: LDR: 3 (0.1%) | แรงดัน: 144mV | LED: 99.9%[0m
+[0;32mI (23035) LDR_LED_CONTROL: LDR: 0 (0.0%) | แรงดัน: 142mV | LED: 100.0%[0m
+[0;32mI (23135) LDR_LED_CONTROL: LDR: 0 (0.0%) | แรงดัน: 142mV | LED: 100.0%[0m
+[0;32mI (23235) LDR_LED_CONTROL: LDR: 0 (0.0%) | แรงดัน: 142mV | LED: 100.0%[0m
+[0;32mI (23335) LDR_LED_CONTROL: LDR: 0 (0.0%) | แรงดัน: 142mV | LED: 100.0%[0m
+[0;32mI (23435) LDR_LED_CONTROL: LDR: 0 (0.0%) | แรงดัน: 142mV | LED: 100.0%[0m
+[0;32mI (23535) LDR_LED_CONTROL: LDR: 0 (0.0%) | แรงดัน: 142mV | LED: 100.0%[0m
+[0;32mI (23635) LDR_LED_CONTROL: LDR: 0 (0.0%) | แรงดัน: 142mV | LED: 100.0%[0m
+[0;32mI (23735) LDR_LED_CONTROL: LDR: 0 (0.0%) | แรงดัน: 142mV | LED: 100.0%[0m
+[0;32mI (23835) LDR_LED_CONTROL: LDR: 0 (0.0%) | แรงดัน: 142mV | LED: 100.0%[0m
+[0;32mI (23935) LDR_LED_CONTROL: LDR: 0 (0.0%) | แรงดัน: 142mV | LED: 100.0%[0m
+[0;32mI (24035) LDR_LED_CONTROL: LDR: 0 (0.0%) | แรงดัน: 142mV | LED: 100.0%[0m
+[0;32mI (24135) LDR_LED_CONTROL: LDR: 787 (19.2%) | แรงดัน: 796mV | LED: 80.8%[0m
+[0;32mI (24235) LDR_LED_CONTROL: LDR: 936 (22.9%) | แรงดัน: 920mV | LED: 77.1%[0m
+[0;32mI (24335) LDR_LED_CONTROL: LDR: 1087 (26.5%) | แรงดัน: 1046mV | LED: 73.4%[0m
+[0;32mI (24435) LDR_LED_CONTROL: LDR: 1195 (29.2%) | แรงดัน: 1135mV | LED: 70.8%[0m
+[0;32mI (24535) LDR_LED_CONTROL: LDR: 1161 (28.4%) | แรงดัน: 1107mV | LED: 71.6%[0m
+[0;32mI (24635) LDR_LED_CONTROL: LDR: 1240 (30.3%) | แรงดัน: 1173mV | LED: 69.7%[0m
+[0;32mI (24735) LDR_LED_CONTROL: LDR: 1193 (29.1%) | แรงดัน: 1134mV | LED: 70.9%[0m
+[0;32mI (24835) LDR_LED_CONTROL: LDR: 1137 (27.8%) | แรงดัน: 1087mV | LED: 72.2%[0m
+[0;32mI (24935) LDR_LED_CONTROL: LDR: 966 (23.6%) | แรงดัน: 945mV | LED: 76.4%[0m
+[0;32mI (25035) LDR_LED_CONTROL: LDR: 947 (23.1%) | แรงดัน: 929mV | LED: 76.9%[0m
+[0;32mI (25135) LDR_LED_CONTROL: LDR: 960 (23.4%) | แรงดัน: 940mV | LED: 76.5%[0m
+[0;32mI (25235) LDR_LED_CONTROL: LDR: 938 (22.9%) | แรงดัน: 922mV | LED: 77.1%[0m
+[0;32mI (25335) LDR_LED_CONTROL: LDR: 1055 (25.8%) | แรงดัน: 1019mV | LED: 74.2%[0m
+[0;32mI (25435) LDR_LED_CONTROL: LDR: 1018 (24.9%) | แรงดัน: 988mV | LED: 75.1%[0m
+[0;32mI (25535) LDR_LED_CONTROL: LDR: 1211 (29.6%) | แรงดัน: 1149mV | LED: 70.4%[0m
+[0;32mI (25635) LDR_LED_CONTROL: LDR: 1226 (29.9%) | แรงดัน: 1161mV | LED: 70.1%[0m
+[0;32mI (25735) LDR_LED_CONTROL: LDR: 1063 (26.0%) | แรงดัน: 1026mV | LED: 74.0%[0m
+[0;32mI (25835) LDR_LED_CONTROL: LDR: 1718 (42.0%) | แรงดัน: 1570mV | LED: 58.0%[0m
+[0;32mI (25935) LDR_LED_CONTROL: LDR: 1546 (37.8%) | แรงดัน: 1427mV | LED: 62.2%[0m
+[0;32mI (26035) LDR_LED_CONTROL: LDR: 1207 (29.5%) | แรงดัน: 1145mV | LED: 70.5%[0m
+[0;32mI (26135) LDR_LED_CONTROL: LDR: 1303 (31.8%) | แรงดัน: 1225mV | LED: 68.2%[0m
+[0;32mI (26235) LDR_LED_CONTROL: LDR: 1192 (29.1%) | แรงดัน: 1133mV | LED: 70.9%[0m
+[0;32mI (26335) LDR_LED_CONTROL: LDR: 1133 (27.7%) | แรงดัน: 1084mV | LED: 72.3%[0m
+[0;32mI (26435) LDR_LED_CONTROL: LDR: 1071 (26.2%) | แรงดัน: 1032mV | LED: 73.8%[0m
+[0;32mI (26535) LDR_LED_CONTROL: LDR: 1130 (27.6%) | แรงดัน: 1081mV | LED: 72.4%[0m
+[0;32mI (26635) LDR_LED_CONTROL: LDR: 1140 (27.8%) | แรงดัน: 1090mV | LED: 72.2%[0m
+[0;32mI (26735) LDR_LED_CONTROL: LDR: 1071 (26.2%) | แรงดัน: 1032mV | LED: 73.8%[0m
+[0;32mI (26835) LDR_LED_CONTROL: LDR: 644 (15.7%) | แรงดัน: 677mV | LED: 84.3%[0m
+[0;32mI (26935) LDR_LED_CONTROL: LDR: 832 (20.3%) | แรงดัน: 834mV | LED: 79.7%[0m
+[0;32mI (27035) LDR_LED_CONTROL: LDR: 567 (13.8%) | แรงดัน: 613mV | LED: 86.1%[0m
+[0;32mI (27135) LDR_LED_CONTROL: LDR: 132 (3.2%) | แรงดัน: 252mV | LED: 96.8%[0m
+[0;32mI (27235) LDR_LED_CONTROL: LDR: 39 (1.0%) | แรงดัน: 174mV | LED: 99.0%[0m
+[0;32mI (27335) LDR_LED_CONTROL: LDR: 38 (0.9%) | แรงดัน: 174mV | LED: 99.1%[0m
+[0;32mI (27435) LDR_LED_CONTROL: LDR: 1 (0.0%) | แรงดัน: 143mV | LED: 100.0%[0m
+[0;32mI (27535) LDR_LED_CONTROL: LDR: 0 (0.0%) | แรงดัน: 142mV | LED: 100.0%[0m
+[0;32mI (27635) LDR_LED_CONTROL: LDR: 0 (0.0%) | แรงดัน: 142mV | LED: 100.0%[0m
+[0;32mI (27735) LDR_LED_CONTROL: LDR: 0 (0.0%) | แรงดัน: 142mV | LED: 100.0%[0m
+[0;32mI (27835) LDR_LED_CONTROL: LDR: 0 (0.0%) | แรงดัน: 142mV | LED: 100.0%[0m
+[0;32mI (27935) LDR_LED_CONTROL: LDR: 0 (0.0%) | แรงดัน: 142mV | LED: 100.0%[0m
+[0;32mI (28035) LDR_LED_CONTROL: LDR: 0 (0.0%) | แรงดัน: 142mV | LED: 100.0%[0m
+[0;32mI (28135) LDR_LED_CONTROL: LDR: 15 (0.4%) | แรงดัน: 154mV | LED: 99.6%[0m
+[0;32mI (28235) LDR_LED_CONTROL: LDR: 655 (16.0%) | แรงดัน: 686mV | LED: 84.0%[0m
+[0;32mI (28335) LDR_LED_CONTROL: LDR: 741 (18.1%) | แรงดัน: 758mV | LED: 81.9%[0m
+[0;32mI (28435) LDR_LED_CONTROL: LDR: 932 (22.8%) | แรงดัน: 917mV | LED: 77.2%[0m
+[0;32mI (28535) LDR_LED_CONTROL: LDR: 1029 (25.1%) | แรงดัน: 997mV | LED: 74.9%[0m
+[0;32mI (28635) LDR_LED_CONTROL: LDR: 1282 (31.3%) | แรงดัน: 1208mV | LED: 68.7%[0m
+[0;32mI (28735) LDR_LED_CONTROL: LDR: 1564 (38.2%) | แรงดัน: 1442mV | LED: 61.8%[0m
+[0;32mI (28835) LDR_LED_CONTROL: LDR: 1989 (48.6%) | แรงดัน: 1795mV | LED: 51.4%[0m
+[0;32mI (28935) LDR_LED_CONTROL: LDR: 1610 (39.3%) | แรงดัน: 1480mV | LED: 60.7%[0m
+[0;32mI (29035) LDR_LED_CONTROL: LDR: 1490 (36.4%) | แรงดัน: 1381mV | LED: 63.6%[0m
+[0;32mI (29135) LDR_LED_CONTROL: LDR: 1536 (37.5%) | แรงดัน: 1419mV | LED: 62.5%[0m
+[0;32mI (29235) LDR_LED_CONTROL: LDR: 1766 (43.1%) | แรงดัน: 1610mV | LED: 56.9%[0m
+[0;32mI (29335) LDR_LED_CONTROL: LDR: 1946 (47.5%) | แรงดัน: 1760mV | LED: 52.5%[0m
+[0;32mI (29435) LDR_LED_CONTROL: LDR: 2087 (51.0%) | แรงดัน: 1877mV | LED: 49.0%[0m
+[0;32mI (29535) LDR_LED_CONTROL: LDR: 2279 (55.7%) | แรงดัน: 2036mV | LED: 44.3%[0m
+[0;32mI (29635) LDR_LED_CONTROL: LDR: 2402 (58.7%) | แรงดัน: 2139mV | LED: 41.3%[0m
+[0;32mI (29735) LDR_LED_CONTROL: LDR: 2004 (48.9%) | แรงดัน: 1808mV | LED: 51.1%[0m
+[0;32mI (29835) LDR_LED_CONTROL: LDR: 2153 (52.6%) | แรงดัน: 1932mV | LED: 47.4%[0m
+[0;32mI (29935) LDR_LED_CONTROL: LDR: 2026 (49.5%) | แรงดัน: 1826mV | LED: 50.5%[0m
+[0;32mI (30035) LDR_LED_CONTROL: LDR: 1800 (44.0%) | แรงดัน: 1638mV | LED: 56.0%[0m
+[0;32mI (30135) LDR_LED_CONTROL: LDR: 1313 (32.1%) | แรงดัน: 1233mV | LED: 67.9%[0m
+[0;32mI (30235) LDR_LED_CONTROL: LDR: 820 (20.0%) | แรงดัน: 824mV | LED: 80.0%[0m
+[0;32mI (30335) LDR_LED_CONTROL: LDR: 559 (13.7%) | แรงดัน: 607mV | LED: 86.3%[0m
+[0;32mI (30435) LDR_LED_CONTROL: LDR: 461 (11.3%) | แรงดัน: 525mV | LED: 88.7%[0m
+[0;32mI (30535) LDR_LED_CONTROL: LDR: 715 (17.5%) | แรงดัน: 736mV | LED: 82.5%[0m
+[0;32mI (30635) LDR_LED_CONTROL: LDR: 730 (17.8%) | แรงดัน: 749mV | LED: 82.2%[0m
+[0;32mI (30735) LDR_LED_CONTROL: LDR: 764 (18.7%) | แรงดัน: 777mV | LED: 81.3%[0m
+[0;32mI (30835) LDR_LED_CONTROL: LDR: 621 (15.2%) | แรงดัน: 658mV | LED: 84.8%[0m
+[0;32mI (30935) LDR_LED_CONTROL: LDR: 555 (13.6%) | แรงดัน: 603mV | LED: 86.4%[0m
+[0;32mI (31035) LDR_LED_CONTROL: LDR: 505 (12.3%) | แรงดัน: 562mV | LED: 87.7%[0m
+[0;32mI (31135) LDR_LED_CONTROL: LDR: 617 (15.1%) | แรงดัน: 655mV | LED: 84.9%[0m
+[0;32mI (31235) LDR_LED_CONTROL: LDR: 840 (20.5%) | แรงดัน: 840mV | LED: 79.5%[0m
+[0;32mI (31335) LDR_LED_CONTROL: LDR: 849 (20.7%) | แรงดัน: 848mV | LED: 79.3%[0m
+[0;32mI (31435) LDR_LED_CONTROL: LDR: 839 (20.5%) | แรงดัน: 839mV | LED: 79.5%[0m
+[0;32mI (31535) LDR_LED_CONTROL: LDR: 841 (20.5%) | แรงดัน: 841mV | LED: 79.5%[0m
+[0;32mI (31635) LDR_LED_CONTROL: LDR: 814 (19.9%) | แรงดัน: 819mV | LED: 80.1%[0m
+[0;32mI (31735) LDR_LED_CONTROL: LDR: 884 (21.6%) | แรงดัน: 877mV | LED: 78.4%[0m
+[0;32mI (31835) LDR_LED_CONTROL: LDR: 866 (21.1%) | แรงดัน: 862mV | LED: 78.8%[0m
+[0;32mI (31935) LDR_LED_CONTROL: LDR: 945 (23.1%) | แรงดัน: 928mV | LED: 76.9%[0m
+[0;32mI (32035) LDR_LED_CONTROL: LDR: 1077 (26.3%) | แรงดัน: 1037mV | LED: 73.7%[0m
+[0;32mI (32135) LDR_LED_CONTROL: LDR: 1343 (32.8%) | แรงดัน: 1258mV | LED: 67.2%[0m
+[0;32mI (32235) LDR_LED_CONTROL: LDR: 1083 (26.4%) | แรงดัน: 1042mV | LED: 73.5%[0m
+[0;32mI (32335) LDR_LED_CONTROL: LDR: 1205 (29.4%) | แรงดัน: 1144mV | LED: 70.6%[0m
+[0;32mI (32435) LDR_LED_CONTROL: LDR: 1507 (36.8%) | แรงดัน: 1395mV | LED: 63.2%[0m
+[0;32mI (32535) LDR_LED_CONTROL: LDR: 1633 (39.9%) | แรงดัน: 1499mV | LED: 60.1%[0m
+[0;32mI (32635) LDR_LED_CONTROL: LDR: 1632 (39.9%) | แรงดัน: 1499mV | LED: 60.1%[0m
+[0;32mI (32735) LDR_LED_CONTROL: LDR: 1462 (35.7%) | แรงดัน: 1357mV | LED: 64.3%[0m
+[0;32mI (32835) LDR_LED_CONTROL: LDR: 1347 (32.9%) | แรงดัน: 1262mV | LED: 67.1%[0m
+[0;32mI (32935) LDR_LED_CONTROL: LDR: 632 (15.4%) | แรงดัน: 667mV | LED: 84.6%[0m
+[0;32mI (33035) LDR_LED_CONTROL: LDR: 561 (13.7%) | แรงดัน: 608mV | LED: 86.3%[0m
+[0;32mI (33135) LDR_LED_CONTROL: LDR: 480 (11.7%) | แรงดัน: 541mV | LED: 88.3%[0m
+[0;32mI (33235) LDR_LED_CONTROL: LDR: 401 (9.8%) | แรงดัน: 475mV | LED: 90.2%[0m
+[0;32mI (33335) LDR_LED_CONTROL: LDR: 328 (8.0%) | แรงดัน: 415mV | LED: 92.0%[0m
+[0;32mI (33435) LDR_LED_CONTROL: LDR: 264 (6.4%) | แรงดัน: 361mV | LED: 93.5%[0m
+[0;32mI (33535) LDR_LED_CONTROL: LDR: 234 (5.7%) | แรงดัน: 337mV | LED: 94.3%[0m
+[0;32mI (33635) LDR_LED_CONTROL: LDR: 230 (5.6%) | แรงดัน: 333mV | LED: 94.4%[0m
+[0;32mI (33735) LDR_LED_CONTROL: LDR: 175 (4.3%) | แรงดัน: 287mV | LED: 95.7%[0m
+[0;32mI (33835) LDR_LED_CONTROL: LDR: 192 (4.7%) | แรงดัน: 302mV | LED: 95.3%[0m
+[0;32mI (33935) LDR_LED_CONTROL: LDR: 183 (4.5%) | แรงดัน: 294mV | LED: 95.5%[0m
+[0;32mI (34035) LDR_LED_CONTROL: LDR: 150 (3.7%) | แรงดัน: 267mV | LED: 96.3%[0m
+[0;32mI (34135) LDR_LED_CONTROL: LDR: 128 (3.1%) | แรงดัน: 248mV | LED: 96.9%[0m
+[0;32mI (34235) LDR_LED_CONTROL: LDR: 106 (2.6%) | แรงดัน: 230mV | LED: 97.4%[0m
+[0;32mI (34335) LDR_LED_CONTROL: LDR: 102 (2.5%) | แรงดัน: 227mV | LED: 97.5%[0m
+[0;32mI (34435) LDR_LED_CONTROL: LDR: 84 (2.1%) | แรงดัน: 212mV | LED: 97.9%[0m
+[0;32mI (34535) LDR_LED_CONTROL: LDR: 66 (1.6%) | แรงดัน: 197mV | LED: 98.4%[0m
+[0;32mI (34635) LDR_LED_CONTROL: LDR: 65 (1.6%) | แรงดัน: 196mV | LED: 98.4%[0m
+[0;32mI (34735) LDR_LED_CONTROL: LDR: 68 (1.7%) | แรงดัน: 199mV | LED: 98.3%[0m
+[0;32mI (34835) LDR_LED_CONTROL: LDR: 54 (1.3%) | แรงดัน: 187mV | LED: 98.7%[0m
+[0;32mI (34935) LDR_LED_CONTROL: LDR: 55 (1.3%) | แรงดัน: 188mV | LED: 98.6%[0m
+[0;32mI (35035) LDR_LED_CONTROL: LDR: 46 (1.1%) | แรงดัน: 180mV | LED: 98.9%[0m
+[0;32mI (35135) LDR_LED_CONTROL: LDR: 46 (1.1%) | แรงดัน: 180mV | LED: 98.9%[0m
+[0;32mI (35235) LDR_LED_CONTROL: LDR: 27 (0.7%) | แรงดัน: 164mV | LED: 99.3%[0m
+[0;32mI (35335) LDR_LED_CONTROL: LDR: 31 (0.8%) | แรงดัน: 168mV | LED: 99.2%[0m
+[0;32mI (35435) LDR_LED_CONTROL: LDR: 40 (1.0%) | แรงดัน: 175mV | LED: 99.0%[0m
+[0;32mI (35535) LDR_LED_CONTROL: LDR: 61 (1.5%) | แรงดัน: 193mV | LED: 98.5%[0m
+[0;32mI (35635) LDR_LED_CONTROL: LDR: 119 (2.9%) | แรงดัน: 241mV | LED: 97.1%[0m
+[0;32mI (35735) LDR_LED_CONTROL: LDR: 168 (4.1%) | แรงดัน: 282mV | LED: 95.9%[0m
+[0;32mI (35835) LDR_LED_CONTROL: LDR: 257 (6.3%) | แรงดัน: 356mV | LED: 93.7%[0m
+[0;32mI (35935) LDR_LED_CONTROL: LDR: 331 (8.1%) | แรงดัน: 417mV | LED: 91.9%[0m
+[0;32mI (36035) LDR_LED_CONTROL: LDR: 426 (10.4%) | แรงดัน: 496mV | LED: 89.6%[0m
+[0;32mI (36135) LDR_LED_CONTROL: LDR: 543 (13.3%) | แรงดัน: 593mV | LED: 86.7%[0m
+[0;32mI (36235) LDR_LED_CONTROL: LDR: 594 (14.5%) | แรงดัน: 636mV | LED: 85.5%[0m
+[0;32mI (36335) LDR_LED_CONTROL: LDR: 745 (18.2%) | แรงดัน: 761mV | LED: 81.8%[0m
+[0;32mI (36435) LDR_LED_CONTROL: LDR: 821 (20.0%) | แรงดัน: 824mV | LED: 79.9%[0m
+[0;32mI (36535) LDR_LED_CONTROL: LDR: 946 (23.1%) | แรงดัน: 928mV | LED: 76.9%[0m
+[0;32mI (36635) LDR_LED_CONTROL: LDR: 1027 (25.1%) | แรงดัน: 996mV | LED: 74.9%[0m
+[0;32mI (36735) LDR_LED_CONTROL: LDR: 1089 (26.6%) | แรงดัน: 1047mV | LED: 73.4%[0m
+[0;32mI (36835) LDR_LED_CONTROL: LDR: 1197 (29.2%) | แรงดัน: 1137mV | LED: 70.8%[0m
+[0;32mI (36935) LDR_LED_CONTROL: LDR: 1223 (29.9%) | แรงดัน: 1159mV | LED: 70.1%[0m
+[0;32mI (37035) LDR_LED_CONTROL: LDR: 1415 (34.6%) | แรงดัน: 1318mV | LED: 65.4%[0m
+[0;32mI (37135) LDR_LED_CONTROL: LDR: 1498 (36.6%) | แรงดัน: 1387mV | LED: 63.4%[0m
+[0;32mI (37235) LDR_LED_CONTROL: LDR: 1582 (38.6%) | แรงดัน: 1457mV | LED: 61.4%[0m
+[0;32mI (37335) LDR_LED_CONTROL: LDR: 1668 (40.7%) | แรงดัน: 1529mV | LED: 59.3%[0m
+[0;32mI (37435) LDR_LED_CONTROL: LDR: 1703 (41.6%) | แรงดัน: 1558mV | LED: 58.4%[0m
+[0;32mI (37535) LDR_LED_CONTROL: LDR: 1792 (43.8%) | แรงดัน: 1632mV | LED: 56.2%[0m
+[0;32mI (37635) LDR_LED_CONTROL: LDR: 1835 (44.8%) | แรงดัน: 1667mV | LED: 55.2%[0m
+[0;32mI (37735) LDR_LED_CONTROL: LDR: 1893 (46.2%) | แรงดัน: 1716mV | LED: 53.8%[0m
+[0;32mI (37835) LDR_LED_CONTROL: LDR: 1970 (48.1%) | แรงดัน: 1780mV | LED: 51.9%[0m
+[0;32mI (37935) LDR_LED_CONTROL: LDR: 1992 (48.6%) | แรงดัน: 1798mV | LED: 51.3%[0m
+[0;32mI (38035) LDR_LED_CONTROL: LDR: 2084 (50.9%) | แรงดัน: 1874mV | LED: 49.1%[0m
+[0;32mI (38135) LDR_LED_CONTROL: LDR: 2102 (51.3%) | แรงดัน: 1889mV | LED: 48.7%[0m
+[0;32mI (38235) LDR_LED_CONTROL: LDR: 2173 (53.1%) | แรงดัน: 1948mV | LED: 46.9%[0m
+[0;32mI (38335) LDR_LED_CONTROL: LDR: 2242 (54.7%) | แรงดัน: 2006mV | LED: 45.2%[0m
+[0;32mI (38435) LDR_LED_CONTROL: LDR: 2274 (55.5%) | แรงดัน: 2032mV | LED: 44.5%[0m
+[0;32mI (38535) LDR_LED_CONTROL: LDR: 2339 (57.1%) | แรงดัน: 2086mV | LED: 42.9%[0m
+[0;32mI (38635) LDR_LED_CONTROL: LDR: 2400 (58.6%) | แรงดัน: 2137mV | LED: 41.4%[0m
+[0;32mI (38735) LDR_LED_CONTROL: LDR: 2437 (59.5%) | แรงดัน: 2168mV | LED: 40.5%[0m
+[0;32mI (38835) LDR_LED_CONTROL: LDR: 2460 (60.1%) | แรงดัน: 2187mV | LED: 39.9%[0m
+[0;32mI (38935) LDR_LED_CONTROL: LDR: 2453 (59.9%) | แรงดัน: 2181mV | LED: 40.1%[0m
+[0;32mI (39035) LDR_LED_CONTROL: LDR: 2494 (60.9%) | แรงดัน: 2215mV | LED: 39.1%[0m
+[0;32mI (39135) LDR_LED_CONTROL: LDR: 2501 (61.1%) | แรงดัน: 2221mV | LED: 38.9%[0m
+[0;32mI (39235) LDR_LED_CONTROL: LDR: 2493 (60.9%) | แรงดัน: 2214mV | LED: 39.1%[0m
+[0;32mI (39335) LDR_LED_CONTROL: LDR: 2483 (60.6%) | แรงดัน: 2206mV | LED: 39.4%[0m
+[0;32mI (39435) LDR_LED_CONTROL: LDR: 2474 (60.4%) | แรงดัน: 2199mV | LED: 39.6%[0m
+[0;32mI (39535) LDR_LED_CONTROL: LDR: 2521 (61.6%) | แรงดัน: 2238mV | LED: 38.4%[0m
+[0;32mI (39635) LDR_LED_CONTROL: LDR: 3494 (85.3%) | แรงดัน: 2895mV | LED: 14.7%[0m
+[0;32mI (39735) LDR_LED_CONTROL: LDR: 3392 (82.8%) | แรงดัน: 2842mV | LED: 17.2%[0m
+[0;32mI (39835) LDR_LED_CONTROL: LDR: 3345 (81.7%) | แรงดัน: 2817mV | LED: 18.3%[0m
+[0;32mI (39935) LDR_LED_CONTROL: LDR: 3290 (80.3%) | แรงดัน: 2787mV | LED: 19.7%[0m
+[0;32mI (40035) LDR_LED_CONTROL: LDR: 3241 (79.1%) | แรงดัน: 2759mV | LED: 20.9%[0m
+[0;32mI (40135) LDR_LED_CONTROL: LDR: 3148 (76.9%) | แรงดัน: 2705mV | LED: 23.1%[0m
+[0;32mI (40235) LDR_LED_CONTROL: LDR: 3106 (75.8%) | แรงดัน: 2679mV | LED: 24.1%[0m
+[0;32mI (40335) LDR_LED_CONTROL: LDR: 3039 (74.2%) | แรงดัน: 2637mV | LED: 25.8%[0m
+[0;32mI (40435) LDR_LED_CONTROL: LDR: 2977 (72.7%) | แรงดัน: 2596mV | LED: 27.3%[0m
+[0;32mI (40535) LDR_LED_CONTROL: LDR: 2909 (71.0%) | แรงดัน: 2555mV | LED: 29.0%[0m
+[0;32mI (40635) LDR_LED_CONTROL: LDR: 2861 (69.9%) | แรงดัน: 2520mV | LED: 30.1%[0m
+[0;32mI (40735) LDR_LED_CONTROL: LDR: 2810 (68.6%) | แรงดัน: 2478mV | LED: 31.4%[0m
+[0;32mI (40835) LDR_LED_CONTROL: LDR: 2799 (68.4%) | แรงดัน: 2469mV | LED: 31.6%[0m
+[0;32mI (40935) LDR_LED_CONTROL: LDR: 2845 (69.5%) | แรงดัน: 2507mV | LED: 30.5%[0m
+[0;32mI (41035) LDR_LED_CONTROL: LDR: 3869 (94.5%) | แรงดัน: 3066mV | LED: 5.5%[0m
+[0;32mI (41135) LDR_LED_CONTROL: LDR: 4076 (99.5%) | แรงดัน: 3152mV | LED: 0.5%[0m
+[0;32mI (41235) LDR_LED_CONTROL: LDR: 4091 (99.9%) | แรงดัน: 3158mV | LED: 0.1%[0m
+[0;32mI (41335) LDR_LED_CONTROL: LDR: 4095 (100.0%) | แรงดัน: 3160mV | LED: 0.0%[0m
+[0;32mI (41435) LDR_LED_CONTROL: LDR: 4095 (100.0%) | แรงดัน: 3160mV | LED: 0.0%[0m
+[0;32mI (41535) LDR_LED_CONTROL: LDR: 4095 (100.0%) | แรงดัน: 3160mV | LED: 0.0%[0m
+[0;32mI (41635) LDR_LED_CONTROL: LDR: 4093 (100.0%) | แรงดัน: 3159mV | LED: 0.0%[0m
+[0;32mI (41735) LDR_LED_CONTROL: LDR: 4088 (99.8%) | แรงดัน: 3157mV | LED: 0.2%[0m
+[0;32mI (41835) LDR_LED_CONTROL: LDR: 4069 (99.4%) | แรงดัน: 3149mV | LED: 0.6%[0m
+[0;32mI (41935) LDR_LED_CONTROL: LDR: 4044 (98.8%) | แรงดัน: 3139mV | LED: 1.2%[0m
+[0;32mI (42035) LDR_LED_CONTROL: LDR: 4035 (98.5%) | แรงดัน: 3135mV | LED: 1.5%[0m
+[0;32mI (42135) LDR_LED_CONTROL: LDR: 4006 (97.8%) | แรงดัน: 3123mV | LED: 2.2%[0m
+[0;32mI (42235) LDR_LED_CONTROL: LDR: 3985 (97.3%) | แรงดัน: 3115mV | LED: 2.7%[0m
+[0;32mI (42335) LDR_LED_CONTROL: LDR: 3959 (96.7%) | แรงดัน: 3104mV | LED: 3.3%[0m
+[0;32mI (42435) LDR_LED_CONTROL: LDR: 3915 (95.6%) | แรงดัน: 3086mV | LED: 4.4%[0m
+[0;32mI (42535) LDR_LED_CONTROL: LDR: 3898 (95.2%) | แรงดัน: 3078mV | LED: 4.8%[0m
+[0;32mI (42635) LDR_LED_CONTROL: LDR: 3898 (95.2%) | แรงดัน: 3078mV | LED: 4.8%[0m

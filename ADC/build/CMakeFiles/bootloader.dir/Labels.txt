@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/work-2025-1/Week-11-Microcontroller-applications/ADC/build/CMakeFiles/bootloader
+C:/work-2025-1/Week-11-Microcontroller-applications/ADC/build/CMakeFiles/bootloader.rule
+C:/work-2025-1/Week-11-Microcontroller-applications/ADC/build/CMakeFiles/bootloader-complete.rule
+C:/work-2025-1/Week-11-Microcontroller-applications/ADC/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/work-2025-1/Week-11-Microcontroller-applications/ADC/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/work-2025-1/Week-11-Microcontroller-applications/ADC/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/work-2025-1/Week-11-Microcontroller-applications/ADC/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/work-2025-1/Week-11-Microcontroller-applications/ADC/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/work-2025-1/Week-11-Microcontroller-applications/ADC/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/work-2025-1/Week-11-Microcontroller-applications/ADC/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

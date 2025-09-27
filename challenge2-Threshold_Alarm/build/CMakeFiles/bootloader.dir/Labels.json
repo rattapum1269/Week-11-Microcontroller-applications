@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/work-2025-1/Week-11-Microcontroller-applications/challenge2-Threshold_Alarm/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "C:/work-2025-1/Week-11-Microcontroller-applications/challenge2-Threshold_Alarm/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "C:/work-2025-1/Week-11-Microcontroller-applications/challenge2-Threshold_Alarm/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "C:/work-2025-1/Week-11-Microcontroller-applications/challenge2-Threshold_Alarm/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "C:/work-2025-1/Week-11-Microcontroller-applications/challenge2-Threshold_Alarm/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "C:/work-2025-1/Week-11-Microcontroller-applications/challenge2-Threshold_Alarm/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "C:/work-2025-1/Week-11-Microcontroller-applications/challenge2-Threshold_Alarm/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "C:/work-2025-1/Week-11-Microcontroller-applications/challenge2-Threshold_Alarm/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "C:/work-2025-1/Week-11-Microcontroller-applications/challenge2-Threshold_Alarm/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "C:/work-2025-1/Week-11-Microcontroller-applications/challenge2-Threshold_Alarm/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}
